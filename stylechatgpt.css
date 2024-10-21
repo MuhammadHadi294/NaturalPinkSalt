@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header Section */
+.header {
+  background-color: #FF6F61; /* Pink Salt theme */
+  color: white;
+  padding: 50px 20px;
+}
+
+.header h1 {
+  font-size: 3rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Product Intro Section */
+.product-intro {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.product-intro h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.product-intro p {
+  font-size: 1.1rem;
+  margin: 20px 0;
+}
+
+/* Salt Varieties Section */
+.salt-varieties {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.salt-item {
+  width: 45%;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.salt-item h3 {
+  font-size: 1.8rem;
+  color: #FF6F61;
+}
+
+.salt-item p {
+  font-size: 1.1rem;
+  margin: 15px 0;
+}
+
+/* Call to Action Buttons */
+.cta {
+  display: inline-block;
+  background-color: #FF6F61;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+.cta:hover {
+  background-color: #e55d53;
+}
+
+/* Pricing Section */
+.pricing {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.pricing h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+table th {
+  background-color: #FF6F61;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Final Call to Action Section */
+.final-cta {
+  background-color: #FF6F61;
+  color: white;
+  padding: 50px;
+}
+
+.final-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.final-cta a.cta {
+  background-color: white;
+  color: #FF6F61;
+  margin: 10px;
+}
+
+.final-cta a.cta:hover {
+  background-color: #f2f2f2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .salt-item {
+      width: 100%;
+  }
+
+  .header h1 {
+      font-size: 2.5rem;
+  }
+
+  .header p {
+      font-size: 1rem;
+  }
+}

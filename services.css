@@ -1,0 +1,530 @@
+/*--------------Body section-------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+
+/*---------------Nav Bar Section---------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  padding: 12px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  z-index: 1;
+  background-color: #eca098;
+  position: relative;
+  z-index: 10;
+}
+
+nav .logo img {
+  position: absolute;
+  height: 70px;
+  padding: 0;
+  width: auto;
+  top: 5px;
+  left: 40px;
+  border-radius: 50px;
+}
+nav .logo h1 {
+  font-size: 1.1rem;
+  background: linear-gradient(to right, #c8756d 0%,#e4aba6 80%, #e4bab5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin-left: 1.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 95%;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #c7908b;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 1px;
+  background-color: #333;
+  display: block;
+  margin: 7px auto;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger-active {
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.6s;
+  transform: rotate(45deg);
+}
+
+.hamburger-active .line:nth-child(2) {
+  width: 0px;
+}
+
+.hamburger-active .line:nth-child(1),
+.hamburger-active .line:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.hamburger-active .line:nth-child(1) {
+  transform: translateY(12px);
+}
+
+.hamburger-active .line:nth-child(3) {
+  transform: translateY(-5px) rotate(90deg);
+}
+
+.menubar {
+  position: absolute;
+  top: 2;
+  left: -60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+  height: 100vh;
+  padding: 20% 0;
+  background: rgba(255, 255, 255);
+  transition: all 0.5s ease-in;
+  z-index: 2;
+}
+.active {
+  left: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.menubar ul {
+  padding: 0;
+  list-style: none;
+}
+.menubar ul li {
+  margin-bottom: 32px;
+}
+
+.menubar ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 95%;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.menubar ul li a:hover {
+  background-color: #f5f5f5;
+}
+@media screen and (max-width: 790px) {
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  nav .logo img {
+    height: 65px;
+    top: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  
+  text-align: center;
+}
+
+/* Header Section 
+.header {
+
+  background-color: #eca098; /* Pink Salt theme 
+  color: white;
+  padding: 50px 20px;
+}
+
+.header h1 {
+  font-size: 3rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+*/
+
+
+
+/* General reset */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 250px; /* Reduced height for a smaller banner */
+  background-image: url(image/a-photooo.jpeg); /* Add your image here */
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 1.8rem; /* Smaller font for the heading */
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 1rem; /* Smaller font for the paragraph */
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .banner {
+      height: 200px; /* Smaller height for tablets */
+  }
+
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  p {
+      font-size: 0.9rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .banner {
+      height: 180px; /* Smaller height for mobile */
+  }
+
+  h1 {
+      font-size: 1.2rem;
+  }
+
+  p {
+      font-size: 0.8rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Product Intro Section */
+.product-intro {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.product-intro h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.product-intro p {
+  font-size: 1.1rem;
+  margin: 20px 0;
+}
+
+/* Salt Varieties Section */
+.salt-varieties {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.salt-item {
+  width: 45%;
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.salt-item h3 {
+  font-size: 1.8rem;
+  color: #eca098;
+}
+
+.salt-item p {
+  font-size: 1.1rem;
+  margin: 15px 0;
+}
+
+/* Call to Action Buttons */
+.cta {
+  display: inline-block;
+  background-color: #d81b60;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+.cta:hover {
+  background-color: #d02a67;
+}
+
+/* Pricing Section */
+.pricing {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.pricing h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+table th {
+  background-color: #eca098;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Final Call to Action Section */
+.final-cta {
+  background-color: #eca098;
+  color: white;
+  padding: 50px;
+}
+
+.final-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.final-cta a.cta {
+  background-color: white;
+  color: #eca098;
+  margin: 10px;
+}
+
+.final-cta a.cta:hover {
+  background-color: #f2f2f2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .salt-item {
+      width: 100%;
+  }
+
+  .header h1 {
+      font-size: 2.5rem;
+  }
+
+  .header p {
+      font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Make items full-width on tablets and smaller screens */
+  .salt-item {
+    width: 100%;
+  }
+
+  /* Adjust fonts for smaller screens */
+  .product-intro h2, .pricing h2, .final-cta h2 {
+    font-size: 2rem;
+  }
+
+  .product-intro p, .salt-item p, .pricing p {
+    font-size: 1rem;
+  }
+
+  .cta {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  table th, table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for mobile devices */
+  .product-intro h2, .pricing h2, .final-cta h2 {
+    font-size: 1.8rem;
+  }
+
+  .product-intro p, .salt-item p, .pricing p {
+    font-size: 0.9rem;
+  }
+
+  .salt-varieties {
+    margin: 20px 0;
+  }
+
+  table th, table td {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .final-cta {
+    padding: 30px;
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

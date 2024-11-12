@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+}
+.topsection {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  background-image: url('image/blogbackground.jpeg'); /* Add your image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.topsection h2 {
+  color: white; /* Adjust text color based on image contrast */
+  font-size: 5em; /* Adjust size for desktop */
+  margin: 0;
+  padding: 0;
+  font-family: gabriola;
+}
+
+@media (max-width: 768px) {
+  .topsection {
+      height: 150px; /* Adjust height for tablets and mobile */
+  }
+
+  .topsection h1 {
+      font-size: 3em; /* Adjust size for smaller screens */
+  }
+}
+@media (max-width: 375px) {
+  .topsection {
+      height: 100px; /* Adjust height for tablets and mobile */
+  }
+
+  .topsection h1 {
+      font-size: 1.5em; /* Adjust size for smaller screens */
+  }
+}
+
+
+/*---------Start section--------*/
+.start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.start h4 {
+  height: 100px;
+  font-size: 2em;
+  padding-top: 20px;
+  font-family: gabriola;
+}
+
+
+
+
+
+/*------blog container-----*/
+
+.blog-container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+  background-color: #e9e9e9;
+}
+
+.blog-box{
+  width: 350px;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.blog-img{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+
+}
+
+.blog-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.blog-text{
+  padding: 30px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blog-text span{
+  color: #f33c3c;
+  font-size: 0.9rem;
+}
+.blog-text .blog-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #272727;
+  text-decoration: none;
+}
+.blog-text .blog-title:hover {
+  color: #f33c3c;
+  transition: all ease 0.3s;
+}
+.blog-text p{
+  color: #565454;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px 0px;
+}
+.blog-text a{
+  color: #0f0f0f;
+}
+.blog-text a:hover{
+  color: #f33c3c;
+  transition: all ease 0.3s;
+}
+
+@media(max-width:1250px){
+  .blog-box{
+    width: 300px;
+  }
+}
+@media(max-width:1100px){
+  .blog-box{
+    width:70%;
+  }
+}
+@media(max-width:550px){
+  .blog-box{
+    margin: 20px 30px;
+    width:100%;
+  }
+  #blog{
+    padding:20px;
+  }
+}
+
+
+
+
+
+
+
+
+/*banner-no1--------------------*/
+
+.banner-no1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(image/blog-pink-sea.jpeg);
+  background-size:auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 450px;
+  overflow: hidden;
+  
+}
+.baner-text{
+  background-color: #6666663a;
+  width: 100%;
+  height: 450px;
+  
+}
+.banner-no1 p{
+  color: white;
+  font-family: gabriola;
+  font-size: 5rem;
+  text-shadow: #272727 0.6px 1px 1px ;
+  text-align: left;
+  padding-left: 25%;
+}
+
+.banner-no1-span {
+  display: block;
+  color: #eca098;
+
+  font-weight: 800;
+  
+}
+.banner-no1-para{
+  color: white;
+  font-size: 2rem;
+  line-height: 27px;
+}
+.banner-no1-par{
+  line-height: 30px;
+  display: block;
+}
+.banner-no1-readmore{
+  color: #e91e63;
+  font-size: 1.25rem;
+  margin-left: 20%;
+  font-weight: 400;
+  display: block;
+  padding-top: 2%;
+}
+.banner-no1-readmore:hover{
+  color: #030303;
+  transition: all ease .2s;
+}
+
+@media (max-width:768px){
+  .banner-no1{
+    height: auto;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .banner-no1 p{
+    font-size: 4rem;
+  
+  }
+  .banner-no1-para{
+    font-size: 1.6rem;
+    line-height: 27px;
+  }
+  .banner-no1-readmore{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width:425px){
+  .banner-no1{
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .banner-no1 p{
+    font-size: 2.6rem;
+
+  }
+  .banner-no1-para{
+    font-size: 1.1rem;
+    line-height: 2px;
+    padding-left: 9%;
+  }
+  .banner-no1-readmore{
+    font-size: .8rem;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
